@@ -7,7 +7,7 @@ export function MyTimeline() {
     {
       title: "2024",
       content: (
-        <div className="flex gap-24 max-w-7xl">
+        <div className="flex flex-col gap-12 lg:flex-row lg:gap-24 max-w-7xl">
           <Image
             src="/advantexe-logo.png"
             alt="Advantexe Logo"
@@ -19,7 +19,7 @@ export function MyTimeline() {
             <h1 className="text-neutral-800 dark:text-neutral-200 text-xl md:text-3xl font-bold mb-8">
               Software Engineer Intern
             </h1>
-            <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-md font-normal mb-8 max-w-lg">
+            <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8 max-w-lg">
               My second summer at Advantexe Learning Solutions was a transformative experience for both my technical and personal development. Working closely with a team of interns, we designed and developed a business acumen simulation from the ground up, tailored for customer deployment. 
             </p>
           </div>
