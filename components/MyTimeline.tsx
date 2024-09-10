@@ -20,7 +20,7 @@ export function MyTimeline() {
               Software Engineer Intern
             </h1>
             <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-md font-normal mb-8 max-w-lg">
-              My second summer at Advantexe Learning Solutions was a transformative experience for both my technical and personal development. Working closely with a team of interns, we designed and developed a business acumen simulation from the ground up, tailored for customer deployment. Additionally, I conducted research to identify the most effective charting API, enhancing our workflow efficiency.
+              My second summer at Advantexe Learning Solutions was a transformative experience for both my technical and personal development. Working closely with a team of interns, we designed and developed a business acumen simulation from the ground up, tailored for customer deployment. 
             </p>
           </div>
         </div>
