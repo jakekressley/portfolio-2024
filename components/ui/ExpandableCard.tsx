@@ -74,8 +74,8 @@ export function ExpandableCard() {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
-                  width={200}
-                  height={200}
+                  width={500}
+                  height={500}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -129,19 +129,19 @@ export function ExpandableCard() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+      <ul className="max-w-3xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl cursor-pointer bg-black-200 border-2 border-neutral-400"
+            className="p-4 flex flex-col  hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl cursor-pointer dark:bg-black-200 border-2 border-neutral-400"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
-                  width={100}
-                  height={100}
+                  width={400}
+                  height={400}
                   src={card.src}
                   alt={card.title}
                   className="h-60 w-full  rounded-lg object-cover object-top"
@@ -227,8 +227,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Reel Hot takes description
-          <br /><br /> <br />
+          Reel Hot Takes is a web application I developed that gathers all of a users star ratings on Letterboxd and finds their movie opinion that is most different from other users. I devloped a web scraping API using beautifulsoup and FastAPI to act as the backend of this project, scraping data from 3 major movie sites and storing user and movie data in a MongoDB database. My free tier of render does make this application a little slow if it is the first time running it in a while.
         </p>
       );
     },
@@ -243,7 +242,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Machine Learning description
+          This project uses machine learning, specifically cosine similarity, to recommned a user 10 movies to watch based on their favorite movies. Using a dataset containing over 10,000 movies and determining the best fit based on over 5 metrics of the dataset.
         </p>
       );
     },
@@ -257,7 +256,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Focus Forge description
+          I created Focus Forge as a tool to help me study and be more productive. With a database that stores user information and "study coins", Focus Forge allows you to use the most effective study techniques in one place (Pomodoro Timer, Study Tips, etc.). Authentication was created with next-auth.
         </p>
       );
     },
