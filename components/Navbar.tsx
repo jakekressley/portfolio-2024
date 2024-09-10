@@ -11,6 +11,7 @@ const Navbar = () => {
                 <li className="underline-hover dark:underline-hover-dark"><Link href="#about">About</Link></li>
                 <li className="underline-hover dark:underline-hover-dark"><Link href="#experience">Experience</Link></li>
                 <li className="underline-hover dark:underline-hover-dark"><Link href="#projects">Projects</Link></li>
+                <li className="underline-hover dark:underline-hover-dark"><Link href="#bookshelf">Bookshelf</Link></li>
             </ul>
             <div className='absolute right-8'>
 				<ModeToggle />
