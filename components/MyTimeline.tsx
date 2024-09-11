@@ -7,7 +7,7 @@ export function MyTimeline() {
     {
       title: "2024",
       content: (
-        <div className="flex flex-col gap-12 lg:flex-row lg:gap-24 max-w-7xl">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-24 max-w-7xl">
           <Image
             src="/advantexe-logo.png"
             alt="Advantexe Logo"
@@ -29,7 +29,7 @@ export function MyTimeline() {
     {
       title: "2023",
       content: (
-        <div className="flex gap-24 max-w-7xl">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-24 max-w-7xl">
           <Image
             src="/advantexe-logo.png"
             alt="Advantexe Logo"

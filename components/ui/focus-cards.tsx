@@ -41,7 +41,7 @@ export const Card = React.memo(
                 <div className="text-xl text-center md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-4">
                     {card.author}
                 </div>
-                <div className="text-md md:text-lg font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-8">
+                <div className="text-lg md:text-lg font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-8">
                     {card.review}
                 </div>
             </div>
@@ -62,7 +62,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
     const [hovered, setHovered] = useState<number | null>(null);
 
     return (
-        <div className="flex flex-row gap-10 max-w-7xl mx-auto w-full">
+        <div className="book-grid xl:flex xl:flex-row xl:gap-10 xl:max-w-7xl w-full">
             {cards.map((card, index) => (
                 <Card
                     key={card.title}
