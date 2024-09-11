@@ -19,8 +19,8 @@ export function MyTimeline() {
             <h1 className="text-neutral-800 dark:text-neutral-200 text-xl md:text-3xl font-bold mb-8">
               Software Engineer Intern
             </h1>
-            <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8 max-w-lg">
-              My second summer at Advantexe Learning Solutions was a transformative experience for both my technical and personal development. Working closely with a team of interns, we designed and developed a business acumen simulation from the ground up, tailored for customer deployment. 
+            <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-md font-normal mb-8 max-w-lg">
+              My second summer at Advantexe Learning Solutions allowed me to further hone my technical skills. Working in a cross-functional team, I was able to significantly enhance my communication skills. My team was tasked with designing and developing a business acumen simulation from scratch, giving me insight into the product development cycle and further building on my skills as a teammate and leader. Additionally, I conducted research to identify the most effective charting API, which played a crucial role in enhancing our data visualization capabilities.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export function MyTimeline() {
               Software Engineer Intern
             </h1>
             <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-md font-normal mb-8 max-w-lg">
-            During my first year interning at Advantexe Learning Solutions, I was immersed in a hands-on learning environment where I tested various simulations to ensure their accuracy and reliability. Collaborating closely with fellow interns, I contributed to the development of a simulation project, gaining valuable experience in teamwork and problem-solving. Additionally, I conducted research to identify the most effective charting API, which played a crucial role in enhancing our data visualization capabilities.
+            During my first summer interning at Advantexe Learning Solutions, I was immersed in a hands-on learning environment where I tested various simulations to ensure their accuracy and reliability. Collaborating closely with fellow interns, I contributed to the development of a simulation project, gaining valuable experience in teamwork and problem-solving.
             </p>
           </div>
         </div>
