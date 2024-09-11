@@ -130,7 +130,7 @@ export function ExpandableCard() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-3xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
@@ -256,7 +256,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          I created Focus Forge as a tool to help me study and be more productive. With a database that stores user information and "study coins", Focus Forge allows you to use the most effective study techniques in one place (Pomodoro Timer, Study Tips, etc.). Authentication was created with next-auth.
+          I created Focus Forge as a tool to help me study and be more productive. With a database that stores user information and &quot;study coins&quot;, Focus Forge allows you to use the most effective study techniques in one place (Pomodoro Timer, Study Tips, etc.). Authentication was created with next-auth.
         </p>
       );
     },
