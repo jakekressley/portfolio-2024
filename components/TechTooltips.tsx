@@ -85,10 +85,10 @@ const JakeTube = [
 const MLMovies = [
   {
     id: 1,
-    name: "Jupyter",
+    name: "Docker",
     designation: "",
     image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
   },
   {
     id: 2,
