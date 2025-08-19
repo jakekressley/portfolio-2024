@@ -9,10 +9,10 @@ export function MyBooks() {
             src: "https://m.media-amazon.com/images/I/71ZWRJk1bsL._SY466_.jpg",
         },
         {
-            title: "Atomic Habits",
-            author: "James Clear",
-            review: "Contains some incredible advice about creating systems to maximize your potential in life.",
-            src: "https://m.media-amazon.com/images/I/51B2cB-c9DL._SY466_.jpg",
+            title: "Words of Radiance",
+            author: "Brandon Sanderson",
+            review: "Epic fantasy with incredible characters and some great twists.",
+            src: "https://m.media-amazon.com/images/I/812AFi3YPyL._SY522_.jpg",
         },
         {
             title: "Golden Son",
