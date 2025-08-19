@@ -23,7 +23,7 @@ export function MyBooks() {
         {
             title: "The Count of Monte Cristo",
             author: "Alexandre Dumas",
-            review: "The most classic revenge story of all time with incredibly compelling characters.",
+            review: "The most classic iconic revenge story of all time. Contains everything you could want in a book.",
             src: "https://m.media-amazon.com/images/I/41EiXfNY6wL._SY445_SX342_.jpg",
         },
     ];

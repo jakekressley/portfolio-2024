@@ -3,6 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 
+type CardType = {
+    title: string;
+    author: string;
+    review: string;
+    src: string;
+};
+
 export const Card = React.memo(
     ({
         card,
@@ -10,7 +17,7 @@ export const Card = React.memo(
         hovered,
         setHovered,
     }: {
-        card: any;
+        card: CardType;
         index: number;
         hovered: number | null;
         setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -41,7 +48,7 @@ export const Card = React.memo(
                 <div className="text-xl text-center md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-4">
                     {card.author}
                 </div>
-                <div className="text-md md:text-lg font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-8">
+                <div className="text-lg md:text-lg font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200 mt-8">
                     {card.review}
                 </div>
             </div>

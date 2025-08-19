@@ -15,9 +15,8 @@ const Hero = () => {
 	return (
 		<div className='pb-20 pt-12' id='about'>
 			<div>
-				<Spotlight className="-top-40 -left-10 md:-left-32 md:-top20 h-screen" fill="#FF00FF" />
-				<Spotlight className="top-10 -left-10 h-screen w-[50vw]" fill="#DE3163" />
-				<Spotlight className="-top-40 left-[20rem] h-screen" fill="blue" />
+				<Spotlight className="top-0 left-80 h-screen w-[50vw] opacity-40" fill="#FF6FF6" />
+				<Spotlight className="top-0 left-[60rem] h-screen w-[50vw] opacity-40" fill="blue" />
 			</div>
 
 			<div className="h-[60vh] w-full dark:bg-black-100 bg-white  dark:bg-dot-white/[0.15] bg-dot-black/[0.15] absolute flex items-center justify-center top-0 left-0">

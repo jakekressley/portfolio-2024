@@ -165,3 +165,11 @@
 .underline-hover:hover::after {
   transform: scaleX(1); /* Scale to full width on hover */
 }
+
+.book-grid {
+  display: grid;
+  grid-template-rows: 384px 384px;
+  grid-template-columns: 224px 224px;
+  gap: 32px;
+  max-width: 500px;
+}
