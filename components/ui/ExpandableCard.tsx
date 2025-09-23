@@ -67,9 +67,17 @@ export function ExpandableCard() {
             </motion.button>
 
             <motion.div
-              layoutId={`card-${active.id}-${id}`} // use id not title
+              layoutId={`card-${active.id}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-black-100 sm:rounded-3xl overflow-hidden border-2 border-neutral-400"
+              className="
+    w-full max-w-[500px]
+    md:max-h-[90vh]   /* viewport-based cap */
+    h-auto
+    flex flex-col
+    bg-white dark:bg-black-100
+    sm:rounded-3xl overflow-hidden
+    border-2 border-neutral-400
+  "
             >
               <motion.div layoutId={`image-${active.id}-${id}`}>
                 <Image
@@ -78,55 +86,61 @@ export function ExpandableCard() {
                   height={500}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-full lg:h-full sm:rounded-tr-lg sm:rounded-tl-lg object-cover"
+                  className="w-full h-full sm:rounded-t-lg object-cover"
                 />
               </motion.div>
 
-              <div>
-                <div className="flex justify-between items-start p-4">
-                  <div>
-                    <motion.h3
-                      layoutId={`title-${active.id}-${id}`}
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
-                    >
-                      {active.title}
-                    </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.id}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-300 text-base"
-                    >
-                      {active.description}
-                    </motion.p>
-                  </div>
-
-                  <motion.a
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold border-2 border-black dark:border-white dark:text-white"
+              {/* Header text */}
+              <div className="flex justify-between items-start p-4">
+                <div className="min-w-0">
+                  <motion.h3
+                    layoutId={`title-${active.id}-${id}`}
+                    className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
                   >
-                    {active.ctaText}
-                  </motion.a>
+                    {active.title}
+                  </motion.h3>
+                  <motion.p
+                    layoutId={`description-${active.id}-${id}`}
+                    className="text-neutral-600 dark:text-neutral-300 text-base"
+                  >
+                    {active.description}
+                  </motion.p>
                 </div>
 
-                <div className="pt-4 relative px-4">
-                  <motion.div
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-300 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                  >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
-                  </motion.div>
-                </div>
+                <motion.a
+                  layout
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  href={active.ctaLink}
+                  target="_blank"
+                  className="px-4 py-3 text-sm rounded-full font-bold border-2 border-black dark:border-white dark:text-white"
+                >
+                  {active.ctaText}
+                </motion.a>
+              </div>
+
+              {/* Scrollable content area */}
+              <div className="px-4 pb-4 flex-1 min-h-0">
+                <motion.div
+                  layout
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="
+        h-full overflow-y-auto
+        text-neutral-600 dark:text-neutral-300
+        text-xs md:text-sm lg:text-base
+        leading-relaxed
+        [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]
+        pr-1
+      "
+                >
+                  {typeof active.content === "function" ? active.content() : active.content}
+                </motion.div>
               </div>
             </motion.div>
+
           </div>
         ) : null}
       </AnimatePresence>
