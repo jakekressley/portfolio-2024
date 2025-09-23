@@ -22,9 +22,9 @@ export function MyTimeline() {
             <ul className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8 max-w-lg">
               <li>Constructed a network of RAG AI agents, coordinating agent communication with Python to classify legal documents and extract investor and trade data with 90% accuracy, lowering document review time and boosting operational efficiency by 40%.</li>
               <br />
-              <li>Designed a RESTful API with Spring Boot to integrate the AI system into an internal Angular-based application, enabling real-time delivery of structured JSON data and improving access to key insights for 30+ internal users.</li>
+              <li>Designed a REST API with Spring Boot to integrate the AI system into an internal Angular-based application, enabling real-time delivery of structured JSON data and improving access to key insights for 30+ internal users.</li>
               <br />
-              <li>Built an automated fund name–matching function using Levenshtein distance to map AI-extracted fund names to fund IDs in a 10,000+ row Excel dataset, eliminating manual lookups and reducing processing time by over 50%.</li>
+              <li>Built an automated fund name matching function using Levenshtein distance to map AI-extracted fund names to fund IDs in a 10,000+ row Excel dataset, eliminating manual lookups and reducing processing time by over 50%.</li>
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@ export function MyTimeline() {
               <br />
               <li>Researched and recommended the optimal charting API for simulations, cutting implementation time by 30% and improving dashboard performance, enabling participants to access actionable insights for informed decisions.</li>
               <br />
-              <li>Validated and fine-tuned 10+ existing business acumen simulations through black box testing, ensuring accuracy and reliability to provide participants with a consistent, high-quality learning experience.</li>
+              <li>Validated and fine-tuned 10+ existing business acumen simulations through black-box testing, ensuring accuracy and reliability to provide participants with a consistent, high-quality learning experience.</li>
             </ul>
           </div>
         </div>
