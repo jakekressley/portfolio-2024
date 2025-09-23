@@ -14,7 +14,6 @@ export default function Home() {
         <Experience />
         <Projects />
         <Bookshelf />
-        <Footer />
       </div>
     </main>
   );

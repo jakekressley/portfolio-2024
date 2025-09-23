@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
-const reelHotTakes = [
+const screenScout = [
   {
     id: 1,
     name: "MongoDB",
@@ -18,24 +18,38 @@ const reelHotTakes = [
   },
   {
     id: 3,
+    name: "FastAPI",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
+  },
+  {
+    id: 4,
     name: "React",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
   },
   {
-    id: 4,
+    id: 5,
     name: "Tailwind CSS",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
-    id: 5,
+    id: 6,
     name: "TypeScript",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 7,
+    name: "Google Cloud",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
   },
 ];
 const JakeTube = [
@@ -208,7 +222,7 @@ interface TechTooltipsProps {
 }
 
 const projectToArray = new Map();
-projectToArray.set('Reel Hot Takes', reelHotTakes)
+projectToArray.set('Screen Scout', screenScout)
 projectToArray.set('JakeTube', JakeTube)
 projectToArray.set('Machine Learning Movie Recommender', MLMovies)
 projectToArray.set('Focus Forge', focusForge)

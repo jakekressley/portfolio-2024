@@ -186,28 +186,20 @@ const cards: Card[] = [
     ctaLink: "https://github.com/jakekressley/leetlearn-ai",
     content: () => (
       <p>
-        This project uses machine learning, specifically cosine similarity, to recommend a
-        user 10 movies to watch based on their favorite movies. Using a dataset containing
-        over 10,000 movies and determining the best fit based on over 5 metrics of the
-        dataset.
+        LeetLearn AI is an interactive study tool that transforms LeetCode problems into multiple-choice quizzes. Powered by the OpenAI GPT API, it helps programmers reinforce core algorithms and data structures by turning tough coding challenges into quick, reviewable questions. Repo to be made public 9/28.
       </p>
     ),
   },
   {
-    id: "reel-hot-takes",
+    id: "screen-scout",
     description: "",
-    title: "Reel Hot Takes",
+    title: "Screen Scout",
     src: "/movie.png",
     ctaText: "Visit",
-    ctaLink: "https://github.com/jakekressley/Reel-Hot-Takes",
+    ctaLink: "https://github.com/jakekressley/Screen-Scout",
     content: () => (
       <p>
-        Reel Hot Takes is a web application I developed that gathers all of a users star
-        ratings on Letterboxd and finds their movie opinion that is most different from
-        other users. I developed a web scraping API using BeautifulSoup and FastAPI to act
-        as the backend of this project, scraping data from 3 major movie sites and storing
-        user and movie data in a MongoDB database. My free tier of Render does make this
-        application a little slow if it is the first time running it in a while.
+        Screen Scout analyzes a Letterboxd profile to show which ratings are most “hot” (different from the crowd) and recommends similar movies. It’s powered by a FastAPI + MongoDB backend and an ML approach using TF-IDF and cosine similarity, with a responsive React + TypeScript front end.
       </p>
     ),
   },
