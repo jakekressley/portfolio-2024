@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
