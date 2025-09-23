@@ -134,10 +134,16 @@ export function ExpandableCard() {
       <ul className="max-w-3xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
         {cards.map((card) => (
           <motion.div
-            layoutId={`card-${card.id}-${id}`} // use id
+            layoutId={`card-${card.id}-${id}`}
             key={card.id}
-            onClick={() => setActive(card)}
-            className="p-4 flex flex-col hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl cursor-pointer dark:bg-black-200 border-2 border-neutral-400"
+            onClick={() => {
+              // only allow expand on mobile (< 1024px, Tailwind "lg")
+              if (window.innerWidth < 1024) {
+                setActive(card);
+              }
+            }}
+            className="p-4 flex flex-col hover:bg-neutral-100 dark:hover:bg-neutral-800 
+             rounded-xl cursor-pointer dark:bg-black-200 border-2 border-neutral-400"
           >
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.id}-${id}`}>
@@ -177,7 +183,7 @@ export function ExpandableCard() {
 
 // Cards now typed & have stable ids
 const cards: Card[] = [
-    {
+  {
     id: "leetlearn-ai",
     description: "",
     title: "LeetLearn AI",

@@ -57,7 +57,7 @@ function BookCard({ title, author, review, src }: Card) {
         >
           <h3 className="text-white text-base font-semibold">{title}</h3>
           <p className="text-neutral-200 text-xs">{author}</p>
-          <p className="text-sm leading-relaxed text-white">{review}</p>
+          <p className="text-xs md:text-sm leading-relaxed text-white">{review}</p>
         </div>
       </div>
     </article>
@@ -70,7 +70,7 @@ export function MyBooks() {
       title: "Discourses and Selected Writings",
       author: "Epictetus",
       review:
-        "My first introduction into philosophy. Epictetus's arguments for living an ethical life and mental resiliance stick with me to this day.",
+        "My first introduction into philosophy. Epictetus's arguments for living an ethical life stick with me to this day.",
       src: "https://m.media-amazon.com/images/I/71ZWRJk1bsL._SY466_.jpg",
     },
     {
@@ -83,14 +83,14 @@ export function MyBooks() {
       title: "Golden Son",
       author: "Pierce Brown",
       review:
-        "Thrilling Sci-fi space opera with great characters and a gripping plot.",
+        "Thrilling Sci-fi space opera with great characters and great twists.",
       src: "https://m.media-amazon.com/images/I/4175kHZcgtL._SY445_SX342_.jpg",
     },
     {
       title: "The Count of Monte Cristo",
       author: "Alexandre Dumas",
       review:
-        "The most classic iconic revenge story of all time. Contains everything you could want in a book.",
+        "The most classic and iconic revenge story of all time. Has everything you could want in a book.",
       src: "https://m.media-amazon.com/images/I/41EiXfNY6wL._SY445_SX342_.jpg",
     },
   ];
