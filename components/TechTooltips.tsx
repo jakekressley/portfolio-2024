@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+
 const screenScout = [
   {
     id: 1,
@@ -46,63 +47,72 @@ const screenScout = [
   },
   {
     id: 7,
-    name: "Google Cloud",
-    designation: "",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-  },
-];
-const JakeTube = [
-  {
-    id: 1,
     name: "Docker",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
   },
   {
-    id: 2,
+    id: 8,
+    name: "Google Cloud",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+  },
+];
+
+const JakeTube = [
+  {
+    id: 1,
     name: "Express",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
   },
   {
-    id: 3,
+    id: 2,
     name: "Firebase",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
   },
   {
-    id: 4,
-    name: "Google Cloud",
-    designation: "",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-  },
-  {
-    id: 5,
+    id: 3,
     name: "Next.js",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
   },
   {
-    id: 6,
+    id: 4,
     name: "TypeScript",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
-];
-const MLMovies = [
   {
-    id: 1,
+    id: 5,
     name: "Docker",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  },
+  {
+    id: 6,
+    name: "Google Cloud",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+  },
+];
+
+const MLMovies = [
+  {
+    id: 1,
+    name: "Python",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
   },
   {
     id: 2,
@@ -120,19 +130,20 @@ const MLMovies = [
   },
   {
     id: 4,
-    name: "Python",
-    designation: "",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-  },
-  {
-    id: 5,
     name: "scikitlearn",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
   },
+  {
+    id: 5,
+    name: "Docker",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+  },
 ];
+
 const focusForge = [
   {
     id: 1,
@@ -157,17 +168,17 @@ const focusForge = [
   },
   {
     id: 4,
-    name: "Tailwind CSS",
-    designation: "",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  },
-  {
-    id: 5,
     name: "TypeScript",
     designation: "",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 5,
+    name: "Tailwind CSS",
+    designation: "",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
 ];
 
@@ -216,24 +227,23 @@ const leetLearnAI = [
   },
 ];
 
-
 interface TechTooltipsProps {
   project: string;
 }
 
 const projectToArray = new Map();
-projectToArray.set('Screen Scout', screenScout)
-projectToArray.set('JakeTube', JakeTube)
-projectToArray.set('Machine Learning Movie Recommender', MLMovies)
-projectToArray.set('Focus Forge', focusForge)
-projectToArray.set('LeetLearn AI', leetLearnAI)
+projectToArray.set("Screen Scout", screenScout);
+projectToArray.set("JakeTube", JakeTube);
+projectToArray.set("Machine Learning Movie Recommender", MLMovies);
+projectToArray.set("Focus Forge", focusForge);
+projectToArray.set("LeetLearn AI", leetLearnAI);
 
-const TechTooltips:React.FC<TechTooltipsProps> = ({project}) => {
+const TechTooltips: React.FC<TechTooltipsProps> = ({ project }) => {
   return (
     <div className="flex flex-row items-center justify-start w-full gap-4 mt-4">
       <AnimatedTooltip items={projectToArray.get(project)} />
     </div>
   );
-}
+};
 
-export default TechTooltips
+export default TechTooltips;

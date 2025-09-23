@@ -60,7 +60,7 @@ export function ExpandableCard() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0, transition: { duration: 0.05 } }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-2 right-2 items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -136,14 +136,8 @@ export function ExpandableCard() {
           <motion.div
             layoutId={`card-${card.id}-${id}`}
             key={card.id}
-            onClick={() => {
-              // only allow expand on mobile (< 1024px, Tailwind "lg")
-              if (window.innerWidth < 1024) {
-                setActive(card);
-              }
-            }}
-            className="p-4 flex flex-col hover:bg-neutral-100 dark:hover:bg-neutral-800 
-             rounded-xl cursor-pointer dark:bg-black-200 border-2 border-neutral-400"
+            onClick={() => setActive(card)}   // ← open everywhere
+            className="p-4 flex flex-col hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-xl cursor-pointer dark:bg-black-200 border-2 border-neutral-400"
           >
             <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.id}-${id}`}>
