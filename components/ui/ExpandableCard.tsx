@@ -200,7 +200,7 @@ const cards: Card[] = [
     ctaLink: "https://github.com/jakekressley/leetlearn-ai",
     content: () => (
       <p>
-        LeetLearn AI is an interactive study tool that transforms LeetCode problems into multiple-choice quizzes. Powered by the OpenAI GPT API, it helps programmers reinforce core algorithms and data structures by turning tough coding challenges into quick, reviewable questions. Repo to be made public 9/28.
+        LeetLearn AI is an interactive study tool that transforms LeetCode problems into multiple-choice quizzes. Powered by the OpenAI GPT API, it helps programmers reinforce core algorithms and data structures by turning tough coding challenges into quick, reviewable questions. Repo to be made public 10/3.
       </p>
     ),
   },
